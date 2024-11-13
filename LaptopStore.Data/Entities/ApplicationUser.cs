@@ -1,15 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LaptopStore.Data.Entities
 {
     public class ApplicationUser : IdentityUser
     {
         public bool IsActive { get; set; } = true;
+
+        // Thêm thuộc tính LastLoginDate để theo dõi thời gian đăng nhập cuối cùng
+        public DateTime? LastLoginDate { get; set; }
 
         // Quan hệ với các bảng khác
         public ICollection<Order> Orders { get; set; }
