@@ -1,8 +1,11 @@
 ﻿
 using LaptopStore.Business.Interfaces;
 using LaptopStore.Business.Services;
+using LaptopStore.Business.Services.Contracts;
 using LaptopStore.Data.Contexts;
+using LaptopStore.Data.Contracts.Base;
 using LaptopStore.Data.Entities;
+using LaptopStore.Data.Infrastructure;
 using LaptopStore.Data.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +17,11 @@ namespace LaptopStore.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            // Đăng ký dịch vụ với DI container
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IBrandService, BrandService>(); // Đảm bảo đăng ký đúng dịch vụ
+            builder.Services.AddScoped<IProductService, ProductService>(); // Ví dụ với ProductService
+            builder.Services.AddControllers();
 
             // Đọc chuỗi kết nối từ appsettings.json
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

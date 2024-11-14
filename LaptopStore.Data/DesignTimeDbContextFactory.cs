@@ -10,7 +10,7 @@ namespace LaptopStore.Data
         public ApplicationDbContext CreateDbContext(string[] args)
         {
             // Đường dẫn tuyệt đối đến appsettings.json
-            var basePath = @"D:\FULearning\Ky6\Projects\LaptopStore_BE\LaptopStore.API";
+            var basePath = @"D:\Learning\Fall2024\Project\LaptopStore_BE\LaptopStore.API";
             // Đường dẫn đến dự án API (Startup Project)
             var builder = new ConfigurationBuilder()
         .SetBasePath(basePath)

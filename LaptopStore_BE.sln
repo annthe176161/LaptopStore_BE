@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaptopStore.API", "LaptopStore.API\LaptopStore.API.csproj", "{125ABC39-B2B1-4A64-95EF-43EA1FF5524B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaptopStore.API", "LaptopStore.API\LaptopStore.API.csproj", "{125ABC39-B2B1-4A64-95EF-43EA1FF5524B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaptopStore.Business", "LaptopStore.Business\LaptopStore.Business.csproj", "{ACE9B7F8-3F3A-463A-B76F-D950AC9FF12D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaptopStore.Business", "LaptopStore.Business\LaptopStore.Business.csproj", "{ACE9B7F8-3F3A-463A-B76F-D950AC9FF12D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaptopStore.Data", "LaptopStore.Data\LaptopStore.Data.csproj", "{6A0DC789-7415-4D6A-B0AA-A221F1C619A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaptopStore.Data", "LaptopStore.Data\LaptopStore.Data.csproj", "{6A0DC789-7415-4D6A-B0AA-A221F1C619A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
